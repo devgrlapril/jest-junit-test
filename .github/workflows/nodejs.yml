@@ -29,7 +29,7 @@ jobs:
       - name: install with jest v${{ matrix.jest-version }}
         run: |
           yarn add --dev jest@${{ matrix.jest-version }} babel-jest@${{ matrix.jest-version }}
-          yarn --force
+          yarn install --force
       - name: run tests
         run: yarn test
   test-os:
@@ -46,6 +46,6 @@ jobs:
         with:
           node-version: lts/*
       - name: install
-        run: yarn --force
+        run: yarn install --force
       - name: run tests
         run: yarn test
