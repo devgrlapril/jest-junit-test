@@ -454,10 +454,10 @@ describe('buildJsonResults', () => {
     });
   
     expect(jsonResults).toMatchInlineSnapshot(`
-{
-  "testsuites": [
-    {
-      "_attr": {
+Object {
+  "testsuites": Array [
+    Object {
+      "_attr": Object {
         "errors": 0,
         "failures": 0,
         "name": "jest tests",
@@ -465,10 +465,10 @@ describe('buildJsonResults', () => {
         "time": 1.234,
       },
     },
-    {
-      "testsuite": [
-        {
-          "_attr": {
+    Object {
+      "testsuite": Array [
+        Object {
+          "_attr": Object {
             "errors": 0,
             "failures": 0,
             "name": "foo",
@@ -478,11 +478,11 @@ describe('buildJsonResults', () => {
             "timestamp": "2017-03-17T01:05:47",
           },
         },
-        {
-          "properties": [
-            {
-              "property": {
-                "_attr": {
+        Object {
+          "properties": Array [
+            Object {
+              "property": Object {
+                "_attr": Object {
                   "name": "best-tester",
                   "value": "Jason Palmer",
                 },
@@ -490,20 +490,20 @@ describe('buildJsonResults', () => {
             },
           ],
         },
-        {
-          "testcase": [
-            {
-              "_attr": {
+        Object {
+          "testcase": Array [
+            Object {
+              "_attr": Object {
                 "classname": "foo baz should bar",
                 "name": "foo baz should bar",
                 "time": 0.001,
               },
             },
-            {
-              "properties": [
-                {
-                  "property": {
-                    "_attr": {
+            Object {
+              "properties": Array [
+                Object {
+                  "property": Object {
+                    "_attr": Object {
                       "name": "dd_tags[test.invocations]",
                       "value": 2,
                     },
