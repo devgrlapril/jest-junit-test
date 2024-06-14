@@ -475,7 +475,7 @@ describe('buildJsonResults', () => {
                   "skipped": 0,
                   "tests": 1,
                   "time": 0.12,
-                  "timestamp": "2017-03-17T01:05:47",
+                  "timestamp": "2017-03-17T01:05:47.524Z",
                 },
               },
               Object {

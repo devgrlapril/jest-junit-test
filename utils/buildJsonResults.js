@@ -227,7 +227,7 @@ module.exports = function (report, appDirectory, options, rootDir = null) {
           errors: suiteErrors,
           failures: suite.numFailingTests,
           skipped: suite.numPendingTests,
-          timestamp: (new Date(suite.perfStats.start)).toISOString().slice(0, -5),
+          timestamp: (new Date(suite.perfStats.start)).toISOString(),
           time: suiteExecutionTime,
           tests: suiteNumTests
         }
