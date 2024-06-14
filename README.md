@@ -9,7 +9,7 @@ Note: as of jest-junit 11.0.0 NodeJS >= 10.12.0 is required.
 ```shell
 yarn add --dev jest-junit
 ```
-
+ 
 ## Usage
 In your jest config add the following entry:
 ```JSON
