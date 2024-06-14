@@ -454,69 +454,69 @@ describe('buildJsonResults', () => {
     });
   
     expect(jsonResults).toMatchInlineSnapshot(`
-      Object {
-        "testsuites": Array [
-          Object {
-            "_attr": Object {
-              "errors": 0,
-              "failures": 0,
-              "name": "jest tests",
-              "tests": 1,
-              "time": 1.234,
-            },
+{
+  "testsuites": [
+    {
+      "_attr": {
+        "errors": 0,
+        "failures": 0,
+        "name": "jest tests",
+        "tests": 1,
+        "time": 1.234,
+      },
+    },
+    {
+      "testsuite": [
+        {
+          "_attr": {
+            "errors": 0,
+            "failures": 0,
+            "name": "foo",
+            "skipped": 0,
+            "tests": 1,
+            "time": 0.12,
+            "timestamp": "2017-03-17T01:05:47",
           },
-          Object {
-            "testsuite": Array [
-              Object {
-                "_attr": Object {
-                  "errors": 0,
-                  "failures": 0,
-                  "name": "foo",
-                  "skipped": 0,
-                  "tests": 1,
-                  "time": 0.12,
-                  "timestamp": "2017-03-17T01:05:47",
+        },
+        {
+          "properties": [
+            {
+              "property": {
+                "_attr": {
+                  "name": "best-tester",
+                  "value": "Jason Palmer",
                 },
               },
-              Object {
-                "properties": Array [
-                  Object {
-                    "property": Object {
-                      "_attr": Object {
-                        "name": "best-tester",
-                        "value": "Jason Palmer",
-                      },
+            },
+          ],
+        },
+        {
+          "testcase": [
+            {
+              "_attr": {
+                "classname": "foo baz should bar",
+                "name": "foo baz should bar",
+                "time": 0.001,
+              },
+            },
+            {
+              "properties": [
+                {
+                  "property": {
+                    "_attr": {
+                      "name": "dd_tags[test.invocations]",
+                      "value": 2,
                     },
                   },
-                ],
-              },
-              Object {
-                "testcase": Array [
-                  Object {
-                    "_attr": Object {
-                      "classname": "foo baz should bar",
-                      "name": "foo baz should bar",
-                      "time": 0.001,
-                    },
-                  },
-                  Object {
-                    "properties": Array [
-                      Object {
-                        "property": Object {
-                          "_attr": Object {
-                            "name": "dd_tags[test.invocations]",
-                            "value": 2,
-                          },
-                        },
-                      },
-                    ],
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      }
-      `)
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+}
+`)
   });
 });
