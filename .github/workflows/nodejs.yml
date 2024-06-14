@@ -47,8 +47,8 @@ jobs:
         with:
           node-version: lts/*
       - name: install
-        run: npm install --no-audit
-      - name: rebuild  
-        run: npm rebuild
+        run: |
+          npm install --no-audit
+          npm rebuild
       - name: run tests
         run: npm run test
