@@ -13,9 +13,5 @@ module.exports = {
     "<rootDir>/integration-tests/testResultsProcessor/",
     "<rootDir>/integration-tests/reporter/"
   ],
-  reporters: ['default', '.'],
-  snapshotFormat: {
-    escapeString: true,
-    printBasicPrototype: true
-  }
+  reporters: ['default', '.']
 };
